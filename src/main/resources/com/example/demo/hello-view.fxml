@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="750" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <Slider fx:id="SizeRoomSlider" blockIncrement="5.0" layoutX="738.0" layoutY="47.0" majorTickUnit="5.0" max="25.0" min="3.0" minorTickCount="0" prefHeight="14.0" prefWidth="248.0" showTickLabels="true" showTickMarks="true" />
+    <GridPane fx:id="RoomGridPane" prefHeight="630.0" prefWidth="630.0">
+    </GridPane>
+   <Label fx:id="SizeRoomLabel" layoutX="738.0" layoutY="23.0" prefHeight="17.0" prefWidth="99.0" text="Розмір: 7х7">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <Button fx:id="CreateRoomButton" layoutX="794.0" layoutY="96.0" mnemonicParsing="false" onAction="#onCreateRoomButtonClick" prefHeight="37.0" prefWidth="125.0" text="Створити">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+   <Button fx:id="CreateGoalButton" layoutX="770.0" layoutY="199.0" mnemonicParsing="false" onAction="#onCreateGoalButtonClick" prefHeight="44.0" prefWidth="184.0" text="Встановити ціль">
+      <font>
+         <Font size="14.0" />
+      </font></Button>
+   <Label fx:id="GoalModeLabel" layoutX="743.0" layoutY="166.0" prefHeight="21.0" prefWidth="228.0" text="Режим встановлення перешкод">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <Button fx:id="StartLearningButton" layoutX="441.0" layoutY="662.0" mnemonicParsing="false" onAction="#onStartLearningButtonClick" prefHeight="52.0" prefWidth="119.0" text="НАВЧАННЯ">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Label fx:id="LearningLabel" layoutX="757.0" layoutY="673.0" prefHeight="30.0" prefWidth="210.0" text="Навчання завершено!" visible="false">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+
+</Pane>
